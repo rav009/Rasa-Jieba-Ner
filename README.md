@@ -1,10 +1,12 @@
 # 介绍
-这是一个为Rasa项目实现了中文的实体抽取组件的库。
+这是一个为Rasa项目实现了中文的实体抽取组件的库。实体抽取基于Jieba分词的词性识别，可以通过指定词性，将该词性的实体识别出来。
+* Rasa: https://github.com/rasahq
+* Jieba: https://github.com/fxsjy/jieba
 
 # 要求
-python>=3.4
-Rasa=2.8
-Jieba=0.42.1
+* python>=3.4
+* Rasa=2.8
+* Jieba>=0.4
 
 # 使用
 1. 安装本library
@@ -16,9 +18,9 @@ language: zh
 pipeline:
     - name: rasa_jieba_ner.JiebaNerExtractor
       part_of_speech: ['nr','m','n']
-      dictionary_path: "C:/FR Projects/BI-OLD-DRIVER/rasa-demo/data/user_dict/frcn_corpora.txt"
+      dictionary_path: "C:/data/user_dict/frcn_corpora.txt"
  ```
-其中part_of_speech和dictionary_path是可选参数，分别表示抽取实体的词性和用户字典的路径。
+其中part_of_speech和dictionary_path是可选参数，分别表示抽取实体的词性和用户字典的路径。（windows下路径分割符要使用“/”）
 
 # 附录：Jieba分词词性列表
 
