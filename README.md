@@ -21,7 +21,9 @@ pipeline:
       part_of_speech: ['nr','m','n']
       dictionary_path: "C:/data/user_dict/frcn_corpora.txt"
  ```
-其中part_of_speech和dictionary_path是可选参数，分别表示抽取实体的词性和用户字典的路径。（windows下路径分割符要使用“/”）
+其中part_of_speech和dictionary_path是可选参数，分别表示抽取实体的词性和用户字典的路径。  
+默认情况下，只提取词性为nr的实体，nr即人名。  
+注意：windows下用户词典的路径分割符要使用"/"
 
 # 附录：Jieba分词词性列表
 
