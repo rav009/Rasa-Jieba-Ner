@@ -9,9 +9,10 @@
 * Jieba>=0.4
 
 # 使用
-1. 安装本library
-2. 修改Rasa项目的config文件，使用本library作为实体抽取组件。
-## 示例
+1. 运行build.cmd中的命令生成wheel包。
+3. 使用pip安装wheel包。
+3. 修改Rasa项目的config文件，使用本library作为实体抽取组件。
+### 示例
 ```
 language: zh
 
