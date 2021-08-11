@@ -1,0 +1,1 @@
+python37 setup.py bdist_wheel
