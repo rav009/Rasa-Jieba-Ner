@@ -5,7 +5,7 @@
 
 # 要求
 * python>=3.4
-* Rasa=2.8
+* Rasa>=2.5
 * Jieba>=0.4
 
 # 使用
